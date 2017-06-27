@@ -1,0 +1,47 @@
+require.config({
+    baseUrl:'../js/',
+    paths:{
+        zepto:'lib/zepto',
+        base:'base',
+        smmin:'lib/sm.min',
+        smextend:'lib/sm-extend.min',
+        mustache:'lib/mustache',
+        echo:'lib/echo',
+        video:'lib/video.min'
+    },
+    shim:{
+        zepto:{
+            exports:'$',
+            deps:[]
+        },
+        base:{
+            exports:'base',
+            deps:['zepto']
+        },
+        smmin:{
+            exports:'smmin',
+            deps:['zepto']
+        },
+        smextend:{
+            exports:'smextend',
+            deps:['zepto']
+        },
+        mustache:{
+            exports:'mustache',
+            deps:[]
+        },
+        echo:{
+            exports:'echo',
+            deps:[]
+        },
+        video:{
+            exports:'video',
+            deps:[]
+        }
+    }
+});
+
+
+require(['zepto','base', 'app'], function ($, base, app) {
+    app.init();
+});

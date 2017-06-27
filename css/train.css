@@ -1,0 +1,275 @@
+.searchbar_box{
+  height: 2.2rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  background-color: #f7f7f8;
+}
+.searchbar_box .searchbar{
+  margin: 0 -.5rem;
+  padding: .4rem .5rem;
+  background: rgba(0,0,0,.1);
+}
+.searchbar-cancel{
+  color: #5f646e;
+}
+#search{
+  border:0;
+}
+.training_lesson{
+  background: #ffffff;
+  box-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+.lesson_wrapper{
+  padding: 1.7rem 0;
+  text-align: center;
+}
+.lesson_wrapper h3{
+  color: #24c789;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.lesson_wrapper p{
+  color: #999;
+  font-size: 0.7rem;
+}
+.lesson_tag, .train_lession_list{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+.lesson_tag > li{
+  width:50%;
+  height:0;
+  padding-bottom:50%;
+  line-height:0;
+  float: left;
+  overflow: hidden;
+}
+.tag_container, .lesson_introduce{
+  position: relative;
+}
+.lesson_tag .mask{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.tag_info{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+  font-size: 0.78rem;
+}
+.tag_title{
+  margin-bottom:1.2rem;
+}
+.tag_container img, .lesson_introduce img{
+  width:100%;
+}
+.lesson_introduce img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
+}
+/*trainListPage*/
+#train_list header .title,
+#train_list header a,
+#train_lesson header .title,
+#train_lesson header a{
+  color: #ffffff;
+}
+.introduce_info{
+  position: absolute;
+}
+.searchNull{
+  margin-top:1rem;
+  text-align: center;
+  color: #999;
+}
+.train_lession_list > li{
+  position: relative;
+  width:100%;
+  height:8rem;
+  max-height:9rem;
+  line-height:0;
+  margin-bottom:0.1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.lesson_introduce{
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+.introduce_title{
+  top:1.5rem;
+  font-size:0.87rem;
+  font-weight:600;
+}
+.introduce_title, .pioneer{
+  left:0.75rem;
+  color: #ffffff;
+  position: absolute;
+}
+.pioneer{
+  bottom:1.5rem;
+  font-size:0.6rem;
+}
+/*trainLessonPage*/
+.lesson_banner > img{
+  position: absolute;
+  width:100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
+}
+.list_mask{
+  position: absolute;
+  width: 100%;
+  height: 3rem;
+  left: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,0.4)));
+  background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,0.4));
+  background-image: -moz-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,0.4));
+  background-image: -o-linear-gradient(bottom,rgba(0,0,0,0),rgba(0,0,0,0.4));
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4));
+}
+.lesson_banner{
+  width: 100%;
+  height: 0;
+  padding-bottom: 55%;
+  position: relative;
+  max-height:10rem;
+  overflow: hidden;
+}
+.lesson_title{
+  position: absolute;
+  left: 0.75rem;
+  top: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.lesson_banner .pioneer{
+  position: absolute;
+  left:0.75rem;
+  top:6rem;
+  color: #ffffff;
+}
+.lesson_banner .add-button{
+  position: absolute;
+  bottom:0.7rem;
+  padding:0 3.5rem;
+  left:50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.lesson_banner .add-button.disabled{
+  background:#c8c9cb;
+  border-color: #c8c9cb;
+}
+#train_lesson > .content > .list-block{
+  background: #ffffff;
+  box-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.3);
+  font-size:0.75rem;
+}
+#train_lesson > .content > .list-block .item-content{
+  border-bottom:1px solid #e1e1e1;
+}
+/*videoPage*/
+.video_container{
+  background: #444542;
+}
+.video_container .video{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.video_title, .lesson_text > ul{
+  color: #ffffff;
+}
+.video_title{
+  padding-bottom: 0.5rem;
+  margin-bottom:0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size:1rem;
+}
+.pull_down{
+  color: #797B87;
+  font-size:1.4rem;
+  margin: 0.5rem 0.75rem;
+}
+.video_box{
+  margin-top:3.2rem;
+}
+.lesson_text{
+  margin-top:1.5rem;
+  font-size: 0.75rem;
+}
+.lesson_text h3{
+  margin-bottom:0.5rem;
+  font-size:0.75rem;
+  color: #999;
+}
